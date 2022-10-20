@@ -39,7 +39,7 @@ gradlew run
 
 The full output is shown at the bottom, but the main points are:
 
-* When reading with ImageIO, 'applied' and 'embedded' give similar (not identical) images - *the ICC profile is used while the image is being read*
+* When reading with ImageIO, 'applied' and 'embedded' give similar (not identical) images - *any embedded ICC profile is used while the image is being read*
   * This is **not** necessarily the case when reading the same image with other software, e.g. using Bio-Formats to read the same images doesn't appear to use the embedded ICC profile
 * If the the ICC profile is extracted, it can be applied later using a [`ColorConvertOp`](https://docs.oracle.com/en/java/javase/11/docs/api/java.desktop/java/awt/image/ColorConvertOp.html) - *but be careful!*
   * If providing a `BufferedImage` as input, the output image is different from what is expected
