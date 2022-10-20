@@ -21,7 +21,7 @@ The aim is to compare between these, and ideally figure out how to use the embed
 
 ## Python
 
-The python code is shown in [ICC Profiles in Python.ipynb](ICC Profiles in Python.ipynb).
+The python code is shown in [ICC Profiles in Python.ipynb](https://github.com/petebankhead/ICC-Profiles/blob/main/ICC%20Profiles%20in%20Python.ipynb).
 
 In summary: reading the 'ignore' and 'embedded' images with `imageio` give the same pixel data; 'applied' is different.
 
@@ -67,7 +67,7 @@ BufferedImage imgTransformedRaster =
                 false,
                 null
         );
-        ```
+```
 
 
 Basically, it's not straightforward:
